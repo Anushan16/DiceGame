@@ -28,13 +28,11 @@ function diceResult () {
 
     if (randomOne == randomTwo) {
         
-        tieMessage();
+        displayMessage("tie");
     } else if (randomOne > randomTwo) {
-        //continue with result comparision
-        return document.querySelector("h1").innerText = "🏁 Player 1 Wins!"
- 
+      displayMessage("pOne");
     } else {
-        return document.querySelector("h1").innerText = "Player 2 Wins! 🏁"
+      displayMessage("pTwo")
     }
 
 
@@ -42,8 +40,17 @@ function diceResult () {
 };
 
 
-function tieMessage() {
-    return document.querySelector("h1").innerText = "Tie....Try Again!"
+function displayMessage(position) {
+
+    if (position == "tie") {
+      return document.querySelector("h1").innerText = "Tie....Try Again!"
+    } 
+    else if (position == "pOne"){
+      return document.querySelector("h1").innerText = "🏁 Player 1 Wins!"
+    }
+    else {
+      return document.querySelector("h1").innerText = "Player 2 Wins! 🏁"
+    }
     
     
 
