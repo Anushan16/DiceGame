@@ -1,0 +1,1 @@
+A beginer project to JavsSript, with a emphasis on DOM. Utilized topics learned in MIT's Introduction to Computer Science related to scopes and multiple function calls
